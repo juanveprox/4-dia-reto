@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+        <h1 class="main__titulo">Formulario de Contacto</h1>
+        <p class="main__parrafo">Complete los campos con su información</p>
+        <form action="" class="main__formulario">
+
+            <div class="formulario__contenedor">
+                <div class="contenedor__entranda contenedor__entranda--label">
+                    <label for="nombre" class="formulario__label" >Nombre</label>
+                    <label class="formulario__label" for="correo">Correo Electronico</label>
+                    <label for="num" class="formulario__label">Numero de telefono</label>
+                    <label for="msj" class="formulario__label">Mensaje</label>
+                </div>
+                <div class="contenedor__entranda contenedor__entranda--input">
+                    <div class="contenedor__entrada__nombres">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="formulario__input formulario__input--nombre">
+                        <input type="text" name="apellido" placeholder="Apellido" class="formulario__input formulario__input--nombre">
+                    </div>
+                    <input type="email" id="correo" class="formulario__input" placeholder="Correo Electronico">
+                    <input type="tel" id="num" class="formulario__input" placeholder="Numero de telefono">
+                    <textarea  class="formulario__input formulario__input--textarea" name="mensaje" id="msj" placeholder="Mensaje para enviar "></textarea>
+                </div>
+
+                <img src="img/undraw_profile_data_re_v81r.svg" alt="logo" class="formulario__contenedor__img">
+            </div>
+
+            <hr class="formulario__linea">
+            <input type="button" class="formulario__boton" value="Enviar">
+        </form>
+    </main>
+</body>
+
+</html>
